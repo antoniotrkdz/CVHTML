@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Antonio Trabalza Resume</title>
+	<style>
+		path {fill: none;}
+		body {
+		background-color: #000;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;}
+	</style>
+</head>
+<body>
+	
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+<script>
+	var pattern = Trianglify({
+		width: window.innerWidth,
+		height: window.innerHeight,
+       	//height: document.body.scrollHeight,
+		x_colors: ['#ffffff','#f0f0f0','#d9d9d9','#bdbdbd','#969696','#737373','#525252','#252525','#000000']
+	});
+	document.body.appendChild(pattern.svg());
+</script>
+</html>
