@@ -16,7 +16,7 @@
 	</style>
 </head>
 <body>
-	<header id="header" style="width:100%;height:200px;"></header>
+	<header id="header" style="width:100%; height:200px; border-bottom: 1px solid #fff;"></header>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script>
@@ -24,7 +24,7 @@
 		width: document.getElementById("header").scrollWidth,
 		height: document.getElementById("header").scrollHeight,
        	//height: document.body.scrollHeight,
-		x_colors: ['#ffffff','#f0f0f0','#d9d9d9','#bdbdbd','#969696','#737373','#525252','#252525','#000000']
+		x_colors: ['#ffffff','#f0f0f0','#d9d9d9','#bdbdbd','#969696','#737373','#525252','#252525','#000000'].reverse()
 	});
 	document.getElementById("header").appendChild(pattern.svg());
 </script>
