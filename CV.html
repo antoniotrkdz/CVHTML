@@ -20,12 +20,14 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script>
+	var header = document.getElementById("header");
+
 	var pattern = Trianglify({
-		width: document.getElementById("header").scrollWidth,
-		height: document.getElementById("header").scrollHeight,
+		width: header.scrollWidth,
+		height: header.scrollHeight,
        	//height: document.body.scrollHeight,
 		x_colors: ['#ffffff','#f0f0f0','#d9d9d9','#bdbdbd','#969696','#737373','#525252','#252525','#000000'].reverse()
 	});
-	document.getElementById("header").appendChild(pattern.svg());
+	header.appendChild(pattern.svg());
 </script>
 </html>
