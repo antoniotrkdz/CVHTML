@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Antonio Trabalza Resume</title>
 	<link href="https://fonts.googleapis.com/css?family=Exo:100i,200,200i,600,600i" rel="stylesheet">
 	<script src="https://use.fontawesome.com/66cba969de.js"></script>
@@ -95,16 +97,37 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script>
 	const header = document.getElementById("header");
+	
+	function draw() {
+		const pattern = Trianglify({
+			width: header.offsetWidth,
+			height: header.offsetHeight,
+			variance: 1,
+			x_colors: ['#ffffff','#ffffff','#ffffff','#ffffff','#ffffff','#f0f0f0','#d9d9d9','#bdbdbd','#969696','#737373','#525252','#252525','#000000','#000000','#000000','#000000'],
+			y_colors: ['#252525','#252525'],
+			stroke_width: 1,
+			cell_size: 30,
+		});
+		
+		const svg = header.getElementsByTagName("svg")
+		if (svg.length>0) header.removeChild(svg[0]);
+		header.appendChild(pattern.svg());
+	}
+	draw();
+	window.addEventListener("resize", draw);
 
-	const pattern = Trianglify({
-		width: header.scrollWidth,
-		height: header.scrollHeight,
-		variance: 1,
-		x_colors: ['#ffffff','#ffffff','#ffffff','#ffffff','#ffffff','#f0f0f0','#d9d9d9','#bdbdbd','#969696','#737373','#525252','#252525','#000000','#000000','#000000','#000000'],
-		y_colors: ['#252525','#252525'],
-		stroke_width: 1,
-		cell_size: 30
-	});
-	header.appendChild(pattern.svg());
+	function randomColor() {
+		
+		let svgNodes = header.getElementsByTagName("svg")[0].childNodes;
+		console.log(svgNodes.length);
+		
+		n = Math.floor(Math.random() * svgNodes.length);
+		console.log(n);
+		svgNodes[n].style.fill=svgNodes[n].getAttribute("fill");
+		setTimeout(function () { svgNodes[n].style.fill="none" }, 200);
+		console.dir(svgNodes[n].getAttribute("fill"));
+	}
+	setInterval(function () { randomColor() }, 250);
+	randomColor();
 </script>
 </html>
