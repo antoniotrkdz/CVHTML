@@ -16,7 +16,7 @@
 			font-size: 100%;
 			font: inherit;
 			vertical-align: baseline;}
-		h1,p,a,li,span { font-family: 'Exo', sans-serif; color: #fff; }
+		h1,p,a,li,span,div { font-family: 'Exo', sans-serif; color: #fff; }
 	</style>
 </head>
 <body style="background-color: #161616;">
@@ -35,36 +35,43 @@
 			<a href="tel:07577833827" style="text-decoration: none; color: #fff;">&nbsp;07577833827</a>
 		</i>
 	</section>
-<p style="color:#fff; text-align: center;">I am a Full Stack developer with a Scientific Research background. I am passionate about everything Science &amp; Technology and I enjoy functional, lean and clean designs.</p>
-<section style="border: 1px solid #09B3CA; width: 48vw;">
-	<span style="color:#09B3CA; font-weight: 600;">
-		Qualification
-	</span> 
-	<ul>
-		<li><span style="color:#09B3CA; font-weight: 600;">2017</span>&nbsp;Full stack developer course</br>Founders &amp; Coders</li>
-		<li><span style="color:#09B3CA; font-weight: 600;">2015</span>&nbsp;C for Science course</br>Imperial College London</li>
-		<li><span style="color:#09B3CA; font-weight: 600;">2009</span>&nbsp;PhD Neuroscience</br>"Sapienza" University of Rome</li>
-	</ul>
-</section>
-<section style="width: 48vw;">
-	<span style="color:#BB1881; font-weight: 600;">
-		Coding skills
-	</span>
-	<ul>
-		<li>Javascript ES6, HTML5 and CSS3.</li>
-		<li>BEM, Bootstrap 3.* and JQuery.</li>
-		<li>Node.js – Express.js, Hapi.js, Handelbars and deploying Heroku.</li>
-		<li>PostgreSQL, MySQL and MongoDB. </li>
-		<li>QUnit, Tape, Travis CI, Jest, Codecov.</li>
-		<li>Shell (bash) scripting.</li>
-		<li>C and Arduino prototyping.</li>
-		<li>Python and Raspberry Pi prototyping.</li>
-		<li>R statistical analysis.</li>
-		<li>OpenSCAD (3D object design and printing).</li>
-		<li>FIJI/ImageJ2 Macro Language for microscopy image analysis &amp; pattern recognition.</li>
-	</ul>
-</section>
-	<section>
+	<section style="display: inline-block">
+		<section style="border: 1px dashed #fff; width: 48vw;"> 
+			<div style="color:#fff; font-weight: 600;">
+				About me
+			</div>
+			<p style="color:#fff; text-align: center;">I am a Full Stack developer with a Scientific Research background. I am passionate about everything Science &amp; Technology and I enjoy functional, lean and clean designs.</p>
+		</section>
+		<section style="border: 1px dashed #09B3CA; width: 48vw;">
+			<span style="color:#09B3CA; font-weight: 600;">
+				Qualification
+			</span> 
+			<ul style="list-style-type: none;">
+				<li><span style="color:#09B3CA; font-weight: 600;">2017</span>&nbsp;Full stack developer course</br>Founders &amp; Coders</li>
+				<li><span style="color:#09B3CA; font-weight: 600;">2015</span>&nbsp;C for Science course</br>Imperial College London</li>
+				<li><span style="color:#09B3CA; font-weight: 600;">2009</span>&nbsp;PhD Neuroscience</br>"Sapienza" University of Rome</li>
+			</ul>
+		</section>
+	</section>
+	<section style="border: 1px dashed #BB1881; width: 48vw; display: inline-block">
+		<span style="color:#BB1881; font-weight: 600;">
+			Coding skills
+		</span>
+		<ul>
+			<li>Javascript ES6, HTML5 and CSS3.</li>
+			<li>BEM, Bootstrap 3.* and JQuery.</li>
+			<li>Node.js – Express.js, Hapi.js, Handelbars and deploying Heroku.</li>
+			<li>PostgreSQL, MySQL and MongoDB. </li>
+			<li>QUnit, Tape, Travis CI, Jest, Codecov.</li>
+			<li>Shell (bash) scripting.</li>
+			<li>C and Arduino prototyping.</li>
+			<li>Python and Raspberry Pi prototyping.</li>
+			<li>R statistical analysis.</li>
+			<li>OpenSCAD (3D object design and printing).</li>
+			<li>FIJI/ImageJ2 Macro Language for microscopy image analysis &amp; pattern recognition.</li>
+		</ul>
+	</section>
+	<section style="border: 1px dashed #F19F19; width: 48vw; display: inline-block">
 		<span style="color:#F19F19; font-weight: 600;">
 				IT/SysAdmin skills
 			</span>
@@ -80,19 +87,19 @@
 			<li>Good knowledge of computer hardware and of IoT Electronics.</li>
 		</ul>
 	</section>
-<section>
-		<span style="color:#B5CF5D; font-weight: 600;">
-			Interpersonal, Planning and Problem solving skills
-		</span>
-	<ul>
-		<li>Presentation of Code, Tech and related subjects and Product pitch, both written and oral.</li>
-		<li>Presentation of Research findings in international journals, at conferences and regular Laboratory and Department meetings, both written and oral.</li>
-		<li>Managing, planning and reporting of my own work and that of supervised students.</li>
-		<li>Management of internal and external collaborations.</li>
-		<li>Design and planning of novel experiments to overcome problems related to PhD and Scientific Research activities. </li>
-		<li>Management of Research funds.</li>
-	</ul>
-</section>
+	<section style="border: 1px dashed #B5CF5D; width: 48vw; display: inline-block">
+			<span style="color:#B5CF5D; font-weight: 600;">
+				Interpersonal, Planning and Problem solving skills
+			</span>
+		<ul>
+			<li>Presentation of Code, Tech and related subjects and Product pitch, both written and oral.</li>
+			<li>Presentation of Research findings in international journals, at conferences and regular Laboratory and Department meetings, both written and oral.</li>
+			<li>Managing, planning and reporting of my own work and that of supervised students.</li>
+			<li>Management of internal and external collaborations.</li>
+			<li>Design and planning of novel experiments to overcome problems related to PhD and Scientific Research activities. </li>
+			<li>Management of Research funds.</li>
+		</ul>
+	</section>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script>
@@ -124,10 +131,9 @@
 		n = Math.floor(Math.random() * svgNodes.length);
 		console.log(n);
 		svgNodes[n].style.fill=svgNodes[n].getAttribute("fill");
-		setTimeout(function () { svgNodes[n].style.fill="none" }, 200);
+		setTimeout(function () { svgNodes[n].style.fill="none" }, 300);
 		console.dir(svgNodes[n].getAttribute("fill"));
 	}
-	setInterval(function () { randomColor() }, 250);
-	randomColor();
+	setInterval(function () { randomColor() }, 333);
 </script>
 </html>
