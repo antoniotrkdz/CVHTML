@@ -15,15 +15,23 @@
 		.secTitles { background-color: #161616; font-weight: 600; position: absolute; padding: 1px 5px 1px 5px;  }
 		.lx { right: -7px ; top: -13px; } 
 		.rx { left: -7px; top: -13px; }
+		
 		@media (min-width: 761px) {
-    		#long span {display:none}
-			#long p	 {display:inline-block}
+			#contacts { flex-flow: row wrap; justify-content: space-around; }
+			#main { flex-flow: row wrap; justify-content: center; }
+			#main .box { width: 46vw; }
+			#long span { display: none; }
+			#long p	 { display: inline-block; }
 		}
 
 		@media (max-width: 760px) {
-    		#long span {display:inline-block}
-    		#long p {display:none}
+			#contacts { flex-flow: column; align-items: center; }
+			#main { flex-flow: column; align-items: center; }
+			#main .box { width: 95vw; }
+			#long span { display:inline-block; }
+    		#long p { display:none; }
 		}
+
 	</style>
 </head>
 <body style="background-color: #161616;">
@@ -31,7 +39,7 @@
 		<h1 style="background: -webkit-linear-gradient(left, #fff, #525252); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight:200; font-style: italic; position: absolute; bottom: -8px; right: 1vw;">Antonio Trabalza</h1>
 	</header>
 	<div class="border" style="margin-bottom: 2vh; width:100%; height:1px; background: linear-gradient(to left, #525252, #ffffff);"></div>
-		<section style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+		<section id="contacts" style="display: flex;">
 			<i class="fa fa-github-alt fa-lg" style="color: #F19F19">
 				<a href="https://antoniotrkdz.github.io/" style="text-decoration: none; color: #fff;">&nbsp;antoniotrkdz.github.io</a>
 			</i>
@@ -42,9 +50,9 @@
 				<a href="tel:07577833827" style="text-decoration: none; color: #fff;">&nbsp;07577833827</a>
 			</i>
 		</section>
-	<section id="main" style="display: flex; flex-flow: row wrap; justify-content: center; margin-top: 2vh;">
+	<section id="main" style="display: flex; margin-top: 2vh;">
 		<section>
-			<section style="border: 2px dashed #fff; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw;"> 
+			<section class="box" style="border: 2px dashed #fff; position: relative; margin: 0 .5vw 2.5vh .5vw;"> 
 				<div class="secTitles lx" style="color:#fff;">
 					>About me
 				</div>
@@ -52,7 +60,7 @@
 					<li>I am a Full Stack developer with a Scientific Research background. I am passionate about everything Science &amp; Technology and I enjoy functional, lean and clean designs.</li>
 				</ul>
 			</section>
-			<section style="border: 2px dashed #09B3CA; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw;">
+			<section class="box" style="border: 2px dashed #09B3CA; position: relative; margin: 0 .5vw 2.5vh .5vw;">
 				<div class="secTitles lx" style="color:#09B3CA;">
 					>Qualification/training
 				</div> 
@@ -63,7 +71,7 @@
 				</ul>
 			</section>
 		</section>
-		<section style="border: 2px dashed #BB1881; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw">
+		<section class="box" style="border: 2px dashed #BB1881; position: relative; margin: 0 .5vw 2.5vh .5vw">
 			<div class="secTitles rx" style="color:#BB1881;">
 				Coding skills<
 			</div>
@@ -81,7 +89,7 @@
 				<li>FIJI/ImageJ2 Macro Language for microscopy image analysis &amp; pattern recognition.</li>
 			</ul>
 		</section>
-		<section style="border: 2px dashed #F19F19; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw;">
+		<section class="box" style="border: 2px dashed #F19F19;  position: relative; margin: 0 .5vw 2.5vh .5vw;">
 			<div class="secTitles lx" style="color:#F19F19;">
 				>IT/SysAdmin skills
 			</div>
@@ -97,7 +105,7 @@
 				<li>Good knowledge of computer hardware and of IoT Electronics.</li>
 			</ul>
 		</section>
-		<section style="border: 2px dashed #B5CF5D; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw;">
+		<section class="box" style="border: 2px dashed #B5CF5D; position: relative; margin: 0 .5vw 2.5vh .5vw;">
 				<div id="long" class="secTitles rx">
 					<p style="color:#B5CF5D;">Interpersonal/Planning/Problem solving skills<</p><span style="color:#B5CF5D;">Management skills<</span>
 				</div>
