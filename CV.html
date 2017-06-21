@@ -107,11 +107,11 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script>
-	const header = document.getElementById("header");
-	const footer = document.getElementById("footer");
+	var header = document.getElementById("header");
+	var footer = document.getElementById("footer");
 	
 	function draw() {
-		const hpattern = Trianglify({
+		var hpattern = Trianglify({
 			width: header.offsetWidth,
 			height: header.offsetHeight,
 			variance: 1,
@@ -120,8 +120,8 @@
 			stroke_width: 1,
 			cell_size: 30,
 		});
-	console.log(hpattern.opts);	
-		const fpattern = Trianglify({
+		
+		var fpattern = Trianglify({
 			width: footer.offsetWidth,
 			height: footer.offsetHeight,
 			variance: 1,
@@ -131,11 +131,11 @@
 			cell_size: 30,
 		});
 		
-		const hsvg = header.getElementsByTagName("svg");
+		var hsvg = header.getElementsByTagName("svg");
 		if (hsvg.length > 0) header.removeChild(hsvg[0]);
 		header.appendChild(hpattern.svg());
 
-		const fsvg = footer.getElementsByTagName("svg");
+		var fsvg = footer.getElementsByTagName("svg");
 		if (fsvg.length > 0) footer.removeChild(fsvg[0]);
 		footer.appendChild(fpattern.svg());
 	}
@@ -144,14 +144,14 @@
 
 	function randomColor() {
 		
-		let svgNodes = header.getElementsByTagName("svg")[0].childNodes;
-		console.log(svgNodes.length);
+		var svgNodes = header.getElementsByTagName("svg")[0].childNodes;
+	//	console.log(svgNodes.length);
 		
 		n = Math.floor(Math.random() * svgNodes.length);
-		console.log(n);
+	//	console.log(n);
 		svgNodes[n].style.fill=svgNodes[n].getAttribute("fill");
 		setTimeout(function () { svgNodes[n].style.fill="none" }, 300);
-		console.dir(svgNodes[n].getAttribute("fill"));
+	//	console.dir(svgNodes[n].getAttribute("fill"));
 	}
 	setInterval(function () { randomColor() }, 333);
 </script>
