@@ -9,108 +9,109 @@
 	<script src="https://use.fontawesome.com/66cba969de.js"></script>
 	<style>
 		path { fill: none; }
-		body,p,li,header,h1 {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			/*font-size: 100%;
-			font: inherit;
-			vertical-align: baseline;*/}
-		h1,p,a,li,span,div { font-family: 'Exo', sans-serif; color: #fff; }
+		body,li,header,footer,h1 { margin: 0; padding: 0; border: 0; }
+		h1,a,li,span,div { font-family: 'Exo', sans-serif; color: #fff; }
 		.fa { padding: 1.5vh; }
 		.secTitles { background-color: #161616; font-weight: 600; position: absolute; padding: 1px 5px 1px 5px;  }
-		.lx { right: -4px ; top: -10px; } 
-		.rx { left: -4px; top: -10px; }
+		.lx { right: -7px ; top: -13px; } 
+		.rx { left: -7px; top: -13px; }
 	</style>
 </head>
 <body style="background-color: #161616;">
 	<header id="header" style="position: relative; width:100%; height:25vh;">
 		<h1 style="background: -webkit-linear-gradient(left, #fff, #525252); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight:200; font-style: italic; position: absolute; bottom: -1vh; right: 1vw;">Antonio Trabalza</h1>
 	</header>
-	<div id="border" style="margin-bottom: 2vh; width:100%; height:1px; background: linear-gradient(to left, #525252, #ffffff);"></div>
-	<section style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-		<i class="fa fa-github-alt fa-lg" style="color: #F19F19">
-			<a href="https://antoniotrkdz.github.io/" style="text-decoration: none; color: #fff;">&nbsp;antoniotrkdz.github.io</a>
-		</i>
-		<i class="fa fa-envelope-o fa-lg" style="color: #09B3CA;">
-			<a href="mailto:antoniotrabalza@gmail.com" style="text-decoration: none; color: #fff;">&nbsp;antoniotrabalza@gmail.com</a>
-		</i>
-		<i class="fa fa-phone fa-lg" style="color: #B5CF5D;">
-			<a href="tel:07577833827" style="text-decoration: none; color: #fff;">&nbsp;07577833827</a>
-		</i>
-	</section>
-	<section style="display: inline-block; position: relative;">
-		<section style="border: 2px dashed #fff; width: 46vw; margin: 0 .25vw 2.5vh 2.5vw;"> 
-			<div class="secTitles lx" style="color:#fff;">
-				>About me
-			</div>
-			<p style="color:#fff; margin: 1vw;">I am a Full Stack developer with a Scientific Research background. I am passionate about everything Science &amp; Technology and I enjoy functional, lean and clean designs.</p>
+	<div class="border" style="margin-bottom: 2vh; width:100%; height:1px; background: linear-gradient(to left, #525252, #ffffff);"></div>
+		<section style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+			<i class="fa fa-github-alt fa-lg" style="color: #F19F19">
+				<a href="https://antoniotrkdz.github.io/" style="text-decoration: none; color: #fff;">&nbsp;antoniotrkdz.github.io</a>
+			</i>
+			<i class="fa fa-envelope-o fa-lg" style="color: #09B3CA;">
+				<a href="mailto:antoniotrabalza@gmail.com" style="text-decoration: none; color: #fff;">&nbsp;antoniotrabalza@gmail.com</a>
+			</i>
+			<i class="fa fa-phone fa-lg" style="color: #B5CF5D;">
+				<a href="tel:07577833827" style="text-decoration: none; color: #fff;">&nbsp;07577833827</a>
+			</i>
 		</section>
-		<section style="border: 2px dashed #09B3CA; width: 46vw; position: relative; margin: 0 .25vw 2.5vh 2.5vw;">
-			<div class="secTitles lx" style="color:#09B3CA;">
-				>Qualification/training
-			</div> 
-			<ul style="list-style-type: none; padding: 1vw;">
-				<li><span style="color:#09B3CA; font-weight: 600; padding-right: 4em;">2017</span>&nbsp;Full stack developer course</br>Founders &amp; Coders</li>
-				<li><span style="color:#09B3CA; font-weight: 600;">2015</span>&nbsp;C for Science course</br>Imperial College London</li>
-				<li><span style="color:#09B3CA; font-weight: 600;">2009</span>&nbsp;PhD Neuroscience</br>"Sapienza" University of Rome</li>
+	<section id="main" style="display: flex; flex-flow: row wrap; justify-content: center; margin-top: 2vh;">
+		<section>
+			<section style="border: 2px dashed #fff; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw;"> 
+				<div class="secTitles lx" style="color:#fff;">
+					>About me
+				</div>
+				<ul style="list-style-type: none; padding: 1vw;">
+					<li>I am a Full Stack developer with a Scientific Research background. I am passionate about everything Science &amp; Technology and I enjoy functional, lean and clean designs.</li>
+				</ul>
+			</section>
+			<section style="border: 2px dashed #09B3CA; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw;">
+				<div class="secTitles lx" style="color:#09B3CA;">
+					>Qualification/training
+				</div> 
+				<ul style="list-style-type: none; padding: 1vw;">
+					<li><span style="color:#09B3CA; font-weight: 600;">2017</span>&nbsp;Full stack developer course Founders &amp; Coders</li>
+					<li><span style="color:#09B3CA; font-weight: 600;">2015</span>&nbsp;C for Science course Imperial College London</li>
+					<li><span style="color:#09B3CA; font-weight: 600;">2009</span>&nbsp;PhD Neuroscience "Sapienza" University of Rome</li>
+				</ul>
+			</section>
+		</section>
+		<section style="border: 2px dashed #BB1881; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw">
+			<div class="secTitles rx" style="color:#BB1881;">
+				Coding skills<
+			</div>
+			<ul>
+				<li>Javascript ES6, HTML5 and CSS3.</li>
+				<li>BEM, Bootstrap 3.* and JQuery.</li>
+				<li>Node.js – Express.js, Hapi.js, Handelbars and deploying Heroku.</li>
+				<li>PostgreSQL, MySQL and MongoDB. </li>
+				<li>QUnit, Tape, Travis CI, Jest, Codecov.</li>
+				<li>Shell (bash) scripting.</li>
+				<li>C and Arduino prototyping.</li>
+				<li>Python and Raspberry Pi prototyping.</li>
+				<li>R statistical analysis.</li>
+				<li>OpenSCAD (3D object design and printing).</li>
+				<li>FIJI/ImageJ2 Macro Language for microscopy image analysis &amp; pattern recognition.</li>
+			</ul>
+		</section>
+		<section style="border: 2px dashed #F19F19; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw;">
+			<div class="secTitles lx" style="color:#F19F19;">
+				>IT/SysAdmin skills
+			</div>
+			<ul>
+				<li>Gnu/Linux Operating System.</li>
+				<li>Ubuntu, Debian, Gentoo, Fedora, CentOS and Devuan – Desktop and Server.</li>
+				<li>LAMP/LEMP/LAPP/LEPP and MEAN software stacks.</li>
+				<li>Network analysis and reporting tools (nmap, netstat, netcat, tcpdump, SAR, wireshark).</li>
+				<li>VirtualBox and Qemu/KVM virtual machines.</li>
+				<li>Docker and LXC.</li>
+				<li>AWS, Puppet.</li>
+				<li>Vim and Atom text editors.</li>
+				<li>Good knowledge of computer hardware and of IoT Electronics.</li>
+			</ul>
+		</section>
+		<section style="border: 2px dashed #B5CF5D; width: 46vw; position: relative; margin: 0 .5vw 2.5vh .5vw;">
+				<div class="secTitles rx" style="color:#B5CF5D;">
+					Interpersonal/Planning/Problem solving skills<
+				</div>
+			<ul>
+				<li>Presentation of Code, Tech and related subjects and Product pitch, both written and oral.</li>
+				<li>Presentation of Research findings in international journals, at conferences and regular Laboratory and Department meetings, both written and oral.</li>
+				<li>Managing, planning and reporting of my own work and that of supervised students.</li>
+				<li>Management of internal and external collaborations.</li>
+				<li>Design and planning of novel experiments to overcome problems related to PhD and Scientific Research activities. </li>
+				<li>Management of Research funds.</li>
 			</ul>
 		</section>
 	</section>
-	<section style="border: 2px dashed #BB1881; width: 46vw; display: inline-block; position: relative; margin: 0 2.5vw 2.5vh .25vw">
-		<div class="secTitles rx" style="color:#BB1881;">
-			Coding skills<
-		</div>
-		<ul>
-			<li>Javascript ES6, HTML5 and CSS3.</li>
-			<li>BEM, Bootstrap 3.* and JQuery.</li>
-			<li>Node.js – Express.js, Hapi.js, Handelbars and deploying Heroku.</li>
-			<li>PostgreSQL, MySQL and MongoDB. </li>
-			<li>QUnit, Tape, Travis CI, Jest, Codecov.</li>
-			<li>Shell (bash) scripting.</li>
-			<li>C and Arduino prototyping.</li>
-			<li>Python and Raspberry Pi prototyping.</li>
-			<li>R statistical analysis.</li>
-			<li>OpenSCAD (3D object design and printing).</li>
-			<li>FIJI/ImageJ2 Macro Language for microscopy image analysis &amp; pattern recognition.</li>
-		</ul>
-	</section>
-	<section style="border: 2px dashed #F19F19; width: 46vw; display: inline-block; position: relative; margin: 0 .25vw 2.5vh 2.5vw;">
-		<div class="secTitles lx" style="color:#F19F19;">
-			>IT/SysAdmin skills
-		</div>
-		<ul>
-			<li>Gnu/Linux Operating System.</li>
-			<li>Ubuntu, Debian, Gentoo, Fedora, CentOS and Devuan – Desktop and Server.</li>
-			<li>LAMP/LEMP/LAPP/LEPP and MEAN software stacks.</li>
-			<li>Network analysis and reporting tools (nmap, netstat, netcat, tcpdump, SAR, wireshark).</li>
-			<li>VirtualBox and Qemu/KVM virtual machines.</li>
-			<li>Docker and LXC.</li>
-			<li>AWS, Puppet.</li>
-			<li>Vim and Atom text editors.</li>
-			<li>Good knowledge of computer hardware and of IoT Electronics.</li>
-		</ul>
-	</section>
-	<section style="border: 2px dashed #B5CF5D; width: 46vw; display: inline-block; position: relative; margin: 0 2.5vw 2.5vh .25vw;">
-			<div class="secTitles rx" style="color:#B5CF5D;">
-				Interpersonal/Planning/Problem solving skills<
-			</div>
-		<ul>
-			<li>Presentation of Code, Tech and related subjects and Product pitch, both written and oral.</li>
-			<li>Presentation of Research findings in international journals, at conferences and regular Laboratory and Department meetings, both written and oral.</li>
-			<li>Managing, planning and reporting of my own work and that of supervised students.</li>
-			<li>Management of internal and external collaborations.</li>
-			<li>Design and planning of novel experiments to overcome problems related to PhD and Scientific Research activities. </li>
-			<li>Management of Research funds.</li>
-		</ul>
-	</section>
+	<div class="border" style="margin-top: 2vh; width:100%; height:1px; background: linear-gradient(to right, #525252, #ffffff);"></div>
+	<footer id="footer" style="position: relative; width:100%; height:12.5vh; overflow: hidden;"></footer>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script>
 	const header = document.getElementById("header");
-	console.dir(header);	
+	const footer = document.getElementById("footer");
+	
 	function draw() {
-		const pattern = Trianglify({
+		const hpattern = Trianglify({
 			width: header.offsetWidth,
 			height: header.offsetHeight,
 			variance: 1,
@@ -119,10 +120,24 @@
 			stroke_width: 1,
 			cell_size: 30,
 		});
+	console.log(hpattern.opts);	
+		const fpattern = Trianglify({
+			width: footer.offsetWidth,
+			height: footer.offsetHeight,
+			variance: 1,
+			x_colors: ['#ffffff','#ffffff','#ffffff','#ffffff','#ffffff','#f0f0f0','#d9d9d9','#bdbdbd','#969696','#737373','#525252','#252525','#000000','#000000','#000000','#000000'].reverse(),
+			y_colors: ['#252525','#252525'],
+			stroke_width: 1,
+			cell_size: 30,
+		});
 		
-		const svg = header.getElementsByTagName("svg")
-		if (svg.length>0) header.removeChild(svg[0]);
-		header.appendChild(pattern.svg());
+		const hsvg = header.getElementsByTagName("svg");
+		if (hsvg.length > 0) header.removeChild(hsvg[0]);
+		header.appendChild(hpattern.svg());
+
+		const fsvg = footer.getElementsByTagName("svg");
+		if (fsvg.length > 0) footer.removeChild(fsvg[0]);
+		footer.appendChild(fpattern.svg());
 	}
 	draw();
 	window.addEventListener("resize", draw);
