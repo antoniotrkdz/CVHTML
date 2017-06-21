@@ -9,22 +9,26 @@
 	<script src="https://use.fontawesome.com/66cba969de.js"></script>
 	<style>
 		path { fill: none; }
-		body,p,li {
+		body,p,li,header,h1 {
 			margin: 0;
 			padding: 0;
 			border: 0;
-			font-size: 100%;
+			/*font-size: 100%;
 			font: inherit;
-			vertical-align: baseline;}
+			vertical-align: baseline;*/}
 		h1,p,a,li,span,div { font-family: 'Exo', sans-serif; color: #fff; }
+		.fa { padding: 1.5vh; }
+		.secTitles { background-color: #161616; font-weight: 600; position: absolute; padding: 1px 5px 1px 5px;  }
+		.lx { right: -4px ; top: -10px; } 
+		.rx { left: -4px; top: -10px; }
 	</style>
 </head>
 <body style="background-color: #161616;">
-	<header id="header" style="width:100%; height:25vh;">
-		<h1 style="background: -webkit-linear-gradient(left, #fff, #525252); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight:200; font-style: italic; position: absolute; top: 16vh; right: 1vw;">Antonio Trabalza</h1>
+	<header id="header" style="position: relative; width:100%; height:25vh;">
+		<h1 style="background: -webkit-linear-gradient(left, #fff, #525252); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight:200; font-style: italic; position: absolute; bottom: -1vh; right: 1vw;">Antonio Trabalza</h1>
 	</header>
-	<div id="border" style="width:100%; height:1px; background: linear-gradient(to left, #525252, #ffffff);"></div>
-	<section style="display: flex; flex-wrap: wrap; justify-content: space-around; padding: 2vh;">
+	<div id="border" style="margin-bottom: 2vh; width:100%; height:1px; background: linear-gradient(to left, #525252, #ffffff);"></div>
+	<section style="display: flex; flex-wrap: wrap; justify-content: space-around;">
 		<i class="fa fa-github-alt fa-lg" style="color: #F19F19">
 			<a href="https://antoniotrkdz.github.io/" style="text-decoration: none; color: #fff;">&nbsp;antoniotrkdz.github.io</a>
 		</i>
@@ -35,28 +39,28 @@
 			<a href="tel:07577833827" style="text-decoration: none; color: #fff;">&nbsp;07577833827</a>
 		</i>
 	</section>
-	<section style="display: inline-block">
-		<section style="border: 1px dashed #fff; width: 48vw;"> 
-			<div style="color:#fff; font-weight: 600;">
-				About me
+	<section style="display: inline-block; position: relative;">
+		<section style="border: 2px dashed #fff; width: 46vw; margin: 0 .25vw 2.5vh 2.5vw;"> 
+			<div class="secTitles lx" style="color:#fff;">
+				>About me
 			</div>
-			<p style="color:#fff; text-align: center;">I am a Full Stack developer with a Scientific Research background. I am passionate about everything Science &amp; Technology and I enjoy functional, lean and clean designs.</p>
+			<p style="color:#fff; margin: 1vw;">I am a Full Stack developer with a Scientific Research background. I am passionate about everything Science &amp; Technology and I enjoy functional, lean and clean designs.</p>
 		</section>
-		<section style="border: 1px dashed #09B3CA; width: 48vw;">
-			<span style="color:#09B3CA; font-weight: 600;">
-				Qualification
-			</span> 
-			<ul style="list-style-type: none;">
-				<li><span style="color:#09B3CA; font-weight: 600;">2017</span>&nbsp;Full stack developer course</br>Founders &amp; Coders</li>
+		<section style="border: 2px dashed #09B3CA; width: 46vw; position: relative; margin: 0 .25vw 2.5vh 2.5vw;">
+			<div class="secTitles lx" style="color:#09B3CA;">
+				>Qualification/training
+			</div> 
+			<ul style="list-style-type: none; padding: 1vw;">
+				<li><span style="color:#09B3CA; font-weight: 600; padding-right: 4em;">2017</span>&nbsp;Full stack developer course</br>Founders &amp; Coders</li>
 				<li><span style="color:#09B3CA; font-weight: 600;">2015</span>&nbsp;C for Science course</br>Imperial College London</li>
 				<li><span style="color:#09B3CA; font-weight: 600;">2009</span>&nbsp;PhD Neuroscience</br>"Sapienza" University of Rome</li>
 			</ul>
 		</section>
 	</section>
-	<section style="border: 1px dashed #BB1881; width: 48vw; display: inline-block">
-		<span style="color:#BB1881; font-weight: 600;">
-			Coding skills
-		</span>
+	<section style="border: 2px dashed #BB1881; width: 46vw; display: inline-block; position: relative; margin: 0 2.5vw 2.5vh .25vw">
+		<div class="secTitles rx" style="color:#BB1881;">
+			Coding skills<
+		</div>
 		<ul>
 			<li>Javascript ES6, HTML5 and CSS3.</li>
 			<li>BEM, Bootstrap 3.* and JQuery.</li>
@@ -71,10 +75,10 @@
 			<li>FIJI/ImageJ2 Macro Language for microscopy image analysis &amp; pattern recognition.</li>
 		</ul>
 	</section>
-	<section style="border: 1px dashed #F19F19; width: 48vw; display: inline-block">
-		<span style="color:#F19F19; font-weight: 600;">
-				IT/SysAdmin skills
-			</span>
+	<section style="border: 2px dashed #F19F19; width: 46vw; display: inline-block; position: relative; margin: 0 .25vw 2.5vh 2.5vw;">
+		<div class="secTitles lx" style="color:#F19F19;">
+			>IT/SysAdmin skills
+		</div>
 		<ul>
 			<li>Gnu/Linux Operating System.</li>
 			<li>Ubuntu, Debian, Gentoo, Fedora, CentOS and Devuan – Desktop and Server.</li>
@@ -87,10 +91,10 @@
 			<li>Good knowledge of computer hardware and of IoT Electronics.</li>
 		</ul>
 	</section>
-	<section style="border: 1px dashed #B5CF5D; width: 48vw; display: inline-block">
-			<span style="color:#B5CF5D; font-weight: 600;">
-				Interpersonal, Planning and Problem solving skills
-			</span>
+	<section style="border: 2px dashed #B5CF5D; width: 46vw; display: inline-block; position: relative; margin: 0 2.5vw 2.5vh .25vw;">
+			<div class="secTitles rx" style="color:#B5CF5D;">
+				Interpersonal/Planning/Problem solving skills<
+			</div>
 		<ul>
 			<li>Presentation of Code, Tech and related subjects and Product pitch, both written and oral.</li>
 			<li>Presentation of Research findings in international journals, at conferences and regular Laboratory and Department meetings, both written and oral.</li>
@@ -104,7 +108,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script>
 	const header = document.getElementById("header");
-	
+	console.dir(header);	
 	function draw() {
 		const pattern = Trianglify({
 			width: header.offsetWidth,
