@@ -10,26 +10,36 @@
 	<style>
 		path { fill: none; }
 		body,li,header,footer,h1,p { margin: 0; padding: 0; border: 0; }
-		h1,a,li,span,div { font-family: 'Exo', sans-serif; color: #fff; }
+		h1,a,li,div { font-family: 'Exo', sans-serif; color: #fff; }
+		span { font-family: 'Exo', sans-serif; }
 		.fa { padding: 1.5vh; }
-		.secTitles { background-color: #161616; font-weight: 600; position: absolute; padding: 1px 5px 1px 5px;  }
-		.lx { right: -7px ; top: -13px; } 
-		.rx { left: -7px; top: -13px; }
-		
+		.secTitles { background-color: #161616; font-weight: 600; padding: 1px 5px 1px 5px;  }
+				
 		@media (min-width: 761px) {
 			#contacts { flex-flow: row wrap; justify-content: space-around; }
 			#main { flex-flow: row wrap; justify-content: center; }
 			#main .box { width: 46vw; }
-			#long span { display: none; }
-			#long p	 { display: inline-block; }
+			.secTitles { position: absolute;  }
+			.lx { right: -7px ; top: -13px; } 
+			.rx { left: -7px; top: -13px; }
+			.secTitles span { display: none; }
+			.secTitles p { display: inline-block; }
 		}
 
 		@media (max-width: 760px) {
 			#contacts { flex-flow: column; align-items: center; }
 			#main { flex-flow: column; align-items: center; }
 			#main .box { width: 95vw; }
-			#long span { display:inline-block; }
-    		#long p { display:none; }
+			.secTitles { position: relative; }
+			.lx { margin: -13px auto; text-align: center; } 
+			.rx { margin: -13px auto; text-align: center; }
+			#about { width: 60px; }
+			#qual { width: 105px; }
+			#code { width: 105px; }
+			#it { width: 150px; }
+			#manag { width: 150px; }
+			.secTitles span { display:inline-block; }
+    		.secTitles p { display:none; }
 		}
 
 	</style>
@@ -53,16 +63,16 @@
 	<section id="main" style="display: flex; margin-top: 2vh;">
 		<section>
 			<section class="box" style="border: 2px dashed #fff; position: relative; margin: 0 .5vw 2.5vh .5vw;"> 
-				<div class="secTitles lx" style="color:#fff;">
-					>About me
+				<div id="about" class="secTitles lx" style="color:#fff;">
+					<p>&gt;About me</p><span>&gt;About&lt;</span>
 				</div>
 				<ul style="list-style-type: none; padding: 1vw;">
 					<li>I am a Full Stack developer with a Scientific Research background. I am passionate about everything Science &amp; Technology and I enjoy functional, lean and clean designs.</li>
 				</ul>
 			</section>
 			<section class="box" style="border: 2px dashed #09B3CA; position: relative; margin: 0 .5vw 2.5vh .5vw;">
-				<div class="secTitles lx" style="color:#09B3CA;">
-					>Qualification/training
+				<div id="qual" class="secTitles lx" style="color:#09B3CA;">
+					<p>&gt;Qualification/training</p><span>&gt;Qualification&lt;</span>
 				</div> 
 				<ul style="list-style-type: none; padding: 1vw;">
 					<li><span style="color:#09B3CA; font-weight: 600;">2017</span>&nbsp;Full stack developer course Founders &amp; Coders</li>
@@ -72,8 +82,8 @@
 			</section>
 		</section>
 		<section class="box" style="border: 2px dashed #BB1881; position: relative; margin: 0 .5vw 2.5vh .5vw">
-			<div class="secTitles rx" style="color:#BB1881;">
-				Coding skills<
+			<div id="code" class="secTitles rx" style="color:#BB1881;">
+				<p>Coding skills&lt;</p><span>&gt;Coding skills&lt;</span>
 			</div>
 			<ul>
 				<li>Javascript ES6, HTML5 and CSS3.</li>
@@ -90,8 +100,8 @@
 			</ul>
 		</section>
 		<section class="box" style="border: 2px dashed #F19F19;  position: relative; margin: 0 .5vw 2.5vh .5vw;">
-			<div class="secTitles lx" style="color:#F19F19;">
-				>IT/SysAdmin skills
+			<div id="it" class="secTitles lx" style="color:#F19F19;">
+				<p>&gt;IT/SysAdmin skills</p><span>&gt;IT/SysAdmin skills&lt;</span>
 			</div>
 			<ul>
 				<li>Gnu/Linux Operating System.</li>
@@ -106,8 +116,8 @@
 			</ul>
 		</section>
 		<section class="box" style="border: 2px dashed #B5CF5D; position: relative; margin: 0 .5vw 2.5vh .5vw;">
-				<div id="long" class="secTitles rx">
-					<p style="color:#B5CF5D;">Interpersonal/Planning/Problem solving skills<</p><span style="color:#B5CF5D;">Management skills<</span>
+				<div id="manag" class="secTitles rx" style="color:#B5CF5D;">
+					<p>Interpersonal/Planning/Problem solving skills&lt;</p><span>&gt;Management skills&lt;</span>
 				</div>
 			<ul>
 				<li>Presentation of Code, Tech and related subjects and Product pitch, both written and oral.</li>
