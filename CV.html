@@ -11,7 +11,9 @@
 		path { fill: none; }
 		body,li,header,footer,h1,p { margin: 0; padding: 0; border: 0; }
 		h1,a,li,div { font-family: 'Exo', sans-serif; color: #fff; }
-		span { font-family: 'Exo', sans-serif; }
+		span,i { font-family: 'Exo', sans-serif; }
+		/*i { transition: all .2s ease-in-out; }*/
+		i:hover { transform: scale(1.1); }
 		.fa { padding: 1.5vh; }
 		.secTitles { background-color: #161616; font-weight: 600; padding: 1px 5px 1px 5px;  }
 				
@@ -50,15 +52,21 @@
 	</header>
 	<div class="border" style="margin-bottom: 2vh; width:100%; height:1px; background: linear-gradient(to left, #525252, #ffffff);"></div>
 		<section id="contacts" style="display: flex;">
-			<i class="fa fa-github-alt fa-lg" style="color: #F19F19">
-				<a href="https://antoniotrkdz.github.io/" style="text-decoration: none; color: #fff;">&nbsp;antoniotrkdz.github.io</a>
-			</i>
-			<i class="fa fa-envelope-o fa-lg" style="color: #09B3CA;">
-				<a href="mailto:antoniotrabalza@gmail.com" style="text-decoration: none; color: #fff;">&nbsp;antoniotrabalza@gmail.com</a>
-			</i>
-			<i class="fa fa-phone fa-lg" style="color: #B5CF5D;">
-				<a href="tel:07577833827" style="text-decoration: none; color: #fff;">&nbsp;07577833827</a>
-			</i>
+			<a href="https://antoniotrkdz.github.io/" style="text-decoration: none;">
+				<i class="fa fa-github-alt fa-lg" style="color: #F19F19">
+					<span style="color: #fff">&nbsp;antoniotrkdz.github.io</span>
+				</i>
+			</a>
+			<a href="mailto:antoniotrabalza@gmail.com" style="text-decoration: none;">
+				<i class="fa fa-envelope-o fa-lg" style="color: #09B3CA;">
+					<span style="color: #fff;">&nbsp;antoniotrabalza@gmail.com</span>
+				</i>
+			</a>
+			<a href="tel:07577833827" style="text-decoration: none;">
+				<i class="fa fa-phone fa-lg" style="color: #B5CF5D;">
+					<span style="color: #fff;">&nbsp;07577833827</span>
+				</i>
+			</a>
 		</section>
 	<section id="main" style="display: flex; margin-top: 2vh;">
 		<section>
@@ -130,8 +138,15 @@
 		</section>
 	</section>
 	<div class="border" style="margin-top: 2vh; width:100%; height:1px; background: linear-gradient(to right, #525252, #ffffff);"></div>
-	<footer id="footer" style="position: relative; width:100%; height:12.5vh; overflow: hidden;"></footer>
+	<footer id="footer" style="position: relative; width:100%; height:12.5vh; overflow: hidden;">
+		<a href="https://antoniotrkdz.github.io/" style="text-decoration: none; color: #fff; position: absolute; left: 1vw; top: 3vh;">
+			<i class="fa fa-file-pdf-o fa-lg" style="color: #fff;">
+				<span>&nbsp;printer friendly</span>
+			</i>
+		</a>
+	</footer>
 </body>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
 <script>
 	var header = document.getElementById("header");
